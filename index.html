@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="logo.png" class="logo" alt="">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-tag">
+                <p>UI/UX Designer</p>
+                <h1>Hello I am <span>Robin Laura</span> <br> From Germany</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- ------------ABOUT------------ -->
+    <div id="about">
+        <div class="row">
+            <div class="about-1"><img src="user.png" alt=""></div>
+            <div class="about-2">
+                <h1 class="subtitle">About Me</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur neque debitis labore eos temporibus
+                    numquam reprehenderit natus ipsum eaque harum.</p>
+
+                    <div class="tab-title">
+                        <p class="tablinks activelinks" onclick="opentab('skills')">Skills</p>
+                        <p class="tablinks" onclick="opentab('experience')">Experience</p>
+                        <p class="tablinks" onclick="opentab('eductaion')">Education</p>
+                    </div>
+                    <div class="tab-contains active-tab  " id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/app Interfaces</li>
+                            <li><span>Web development</span><br>Web app development</li>
+                            <li><span>App development </span><br>Building Android Apps</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contains" id="experience">
+                        <ul>
+                            <li><span>2021 - curent</span><br>UI UX Design Training at ET Institiute</li>
+                            <li><span>2019-2021 </span><br>Team Lead at Startup </li>
+                            <li><span>2017-2019</span><br>UI UX design Executive At coln Digital Ltd.</li>
+                            <li><span>2016-2017</span><br> Internsip at ekart Commerce</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contains" id="education">
+                        <ul>
+                            <li><span>2016</span><br>UI UX Design Training at ET Institiute</li>
+                            <li><span>Web development</span><br>MBA form MIT Banglore</li>
+                            <li><span>BBA From ISM Banglore</li>
+                        </ul>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- -------------seervices------------------------ -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <h1>web design</h1>
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates id eius hic!
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <h1>UI/UX design</h1>
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates id eius hic!
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <h1>App design</h1>
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates id eius hic!
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- --------My Work---------- -->
+    <div id="Portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="Work-list">
+                <div class="Work">
+                    <img src="work-1.png" alt="">
+                    <div class="layer">
+                        <h3>
+                            Social Media App
+                        </h3>
+                        <p>The app connects you to the taleneted people around the world. Download it from play store</p>
+                        <a href="#">icon</a>
+                    </div>
+                </div>
+                <div class="Work">
+                    <img src="work-2.png" alt="">
+                    <div class="layer">
+                        <h3>
+                            Music Media App
+                        </h3>
+                        <p>The app connects you to the Music around the world. Download it from play store</p>
+                        <a href="#">icon</a>
+                    </div>
+                </div>
+                <div class="Work">
+                    <img src="work-3.png" alt="">
+                    <div class="layer">
+                        <h3>
+                            Health fitness App
+                        </h3>
+                        <p>The app connects you to the best exercise training and best people around the world. Download it from play store</p>
+                        <a href="#">icon</a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+<hr>
+    <!-- ---------------contact------------- -->
+    <div id="contact">
+        <div class="container-contact">
+            <h1>Contact Me</h1>
+           <div id="cid">contact@gmail.com</div>
+           <div id="cphn">9988774455</div>
+        </div>
+        <div class="contactform">
+            
+                <input class="text" style="color: white;"  id="t-1" type="text" placeholder=" Your Name">
+                <input class="text" id="t-2" type="text" placeholder="Your Email">
+                <input class="text" id="t-3" type="text" placeholder="Your Message">
+            
+        </div>
+    </div>
+
+
+<style>
+#contact{
+    /* background-color: blue; */
+    margin-top: 25px;
+    height:40vh ;
+    display: flex;
+    justify-content: space-between;
+
+}
+.container-contact{
+    /* background-color: red; */
+    margin-left: 70px;
+    width: 25vw;
+}
+.contactform{
+display: flex;
+flex-direction: column;
+background-color: black;
+margin-right: 85px ;
+width: 73vh;
+
+
+}
+.container-contact div{
+    margin: 5px 30px;
+}
+.text{
+    margin: 14px;
+    color: white;
+    height: 5vh;
+    /* color: green; */
+    background-color: grey;
+    border: 1px dotted white;
+    border-radius: 3px;
+}
+ #t-3{
+    width: 32vw;
+    color: white    ;
+    height: 20vh;
+    cursor: pointer;
+}
+::-webkit-input-placeholder {
+       color: white;
+       /* margin-left: 2px ; */
+    }
+</style>
+
+
+
+
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tablinks");
+        var tabcontains = document.getElementsByClassName("tab-contains");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontain of tabcontains){
+                tabcontain.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+        // console.log(tablinks);
+    </script>
+</body>
+
+</html>
